@@ -67,5 +67,12 @@ class syntax_plugin_imagereference_ggbcaption extends syntax_plugin_imagereferen
         $this->Lexer->addExitPattern('</ggbcaption>', 'plugin_imagereference_ggbcaption');
     }
 
+    /**
+     * @var string $captionStart opening tag of caption
+     * @var string $captionEnd closing tag of caption
+     */
+    protected $captionStart = '<div id="%s" class="ggbcaption%s">';
+    protected $captionEnd   = '</div>';
+
 }
 
