@@ -185,6 +185,10 @@ class syntax_plugin_imagereference_imgcaption extends DokuWiki_Syntax_Plugin {
             case 'latex' :
                 if($data['type'] == 'img') {
                     $floattype = 'figure';
+                }
+                else if ($data['type'] == 'ggb') {
+                    // no latex support for GeoGebra applets
+                    return true;
                 } else {
                     $floattype = 'table';
                 }
