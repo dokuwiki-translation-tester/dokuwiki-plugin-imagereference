@@ -31,6 +31,7 @@ div.tabcaptionbox.center {
 
 /* ggb caption */
 div.ggbcaption {
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     padding: 3px !important;
     background-color: #f9f9f9;  
@@ -44,7 +45,7 @@ div.ggbcaption {
 
 /* ggb caption */
 div.ggbcaption.center {
-    margin: 1px auto;
+    margin: 1px auto 10px;
 }
 
 /* image caption */
