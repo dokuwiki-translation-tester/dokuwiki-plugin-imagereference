@@ -29,6 +29,25 @@ div.tabcaptionbox.center {
 }
 */
 
+/* ggb caption */
+div.ggbcaption {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 3px !important;
+    background-color: #f9f9f9;  
+    font-size: 94%;
+    text-align: center;
+    width: auto;
+    overflow: hidden;
+    float: none;
+    display: table;
+}
+
+/* ggb caption */
+div.ggbcaption.center {
+    margin: 1px auto 10px;
+}
+
 /* image caption */
 span.imgcaption {
     border: 1px solid #ccc;
