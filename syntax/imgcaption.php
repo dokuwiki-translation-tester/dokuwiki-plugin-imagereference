@@ -273,7 +273,7 @@ class syntax_plugin_imagereference_imgcaption extends DokuWiki_Syntax_Plugin {
         if(isset($parsed[1])) $caption = trim($parsed[1]);
 
         // get the img ref name. Its the first word
-        $parsed     = explode(" ", $parsed[0], 3);
+        $parsed     = array_pad(explode(" ", $parsed[0], 3), 3, null);
         $captiontype = substr($parsed[0], 0, 3);
         $caprefname = $parsed[1];
 
